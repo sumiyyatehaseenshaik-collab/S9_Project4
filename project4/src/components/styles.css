@@ -1,0 +1,121 @@
+*{
+    background-color: pink;
+}
+
+.head{
+    display: flex;
+    gap: 20px;
+}
+/* MAIN PAGE BACKGROUND */
+.main-page {
+  background-color: pink;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #1e40af;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* CENTER CONTENT */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+/* TEXT STYLING */
+.main-content h1 {
+  font-size: 48px;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  font-size: 20px;
+  color: #374151;
+}
+/* PAGE */
+.contact-page {
+  background-color: pink;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* NAVBAR */
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: blue;
+  font-weight: 500;
+}
+
+/* HEADER SECTION */
+.contact-header {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.contact-header h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+/* SECTIONS LAYOUT */
+.contact-sections {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* CARD STYLE */
+.contact-card {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-card h2 {
+  margin-bottom: 15px;
+  color: #1f2937;
+}
+
+.contact-card p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+/* IMAGE */
+.image-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-card img {
+  width: 200px;
+  border-radius: 10px;
+}

@@ -1,0 +1,126 @@
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Root Theme ===== */
+:root {
+  --bg-dark: #0f172a;
+  --bg-light: #f8fafc;
+  --text-dark: #0f172a;
+  --text-light: #f8fafc;
+  --primary: #38bdf8;
+  --secondary: #22c55e;
+  --danger: #ef4444;
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ===== Body ===== */
+body {
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* ===== App Container ===== */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Navbar ===== */
+nav {
+  background-color: #020617;
+  padding: 15px 30px;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--primary);
+}
+
+/* ===== Page Content ===== */
+.page {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+.page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.page p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* ===== Buttons ===== */
+button {
+  margin-top: 15px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  background-color: var(--primary);
+  color: #020617;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: var(--secondary);
+}
+
+/* ===== Forms ===== */
+input {
+  padding: 10px;
+  width: 260px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* ===== Footer (optional) ===== */
+footer {
+  text-align: center;
+  padding: 12px;
+  background-color: #020617;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* ===== Light Mode Support ===== */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+  }
+
+  nav {
+    background-color: #e2e8f0;
+  }
+
+  nav a {
+    color: var(--text-dark);
+  }
+
+  footer {
+    background-color: #e2e8f0;
+  }
+}
